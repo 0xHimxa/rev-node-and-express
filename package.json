@@ -1,0 +1,9 @@
+{"scripts": {
+  "start": "nodemon ./src/index.mjs"
+},
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.11"
+  },
+  "type": "module"
+}
