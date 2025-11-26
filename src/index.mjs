@@ -1,4 +1,8 @@
 import express from "express";
+//Express validatorr
+
+import { query } from "express-validator";
+
 
 const app = express();
 
@@ -8,8 +12,6 @@ const app = express();
 app.use(express.json());
 
 //check more about app.use = use for make stuffs globally before and route is called
-
-//Middleware
 
 
 
@@ -37,8 +39,6 @@ let userInfos = [
     id: 3,
   },
 ];
-
-
 
 app.listen(3000, () => {
   console.log("runing");
