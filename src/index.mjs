@@ -46,6 +46,21 @@ req.user? res.send(req.user): res.sendStatus(401)
 
 })
 
+// to loguot the user we simple do this
+app.post('/api/auth/logout',(req,res)=>{
+ if(!req.user) return res.sendStatus(401  )
+  req.logout((err)=>{
+if(err) return res.sendStatus(400)
+  res.sendStatus(200)
+  return ;
+})
+// {
+//   "username":"himxa",
+//   "password":123456
+// }
+
+})
+
 
 
 
