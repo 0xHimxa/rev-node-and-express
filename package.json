@@ -1,1 +1,17 @@
-{"scripts":{"start":"nodemon ./src/index.mjs"},"dependencies":{"cookie-parser":"^1.4.7","express":"^5.1.0","express-session":"^1.18.2","express-validator":"^7.3.1","install":"^0.13.0","nodemon":"^3.1.11","passport":"^0.7.0","passport-local":"^1.0.0"},"type":"module"}
+{
+    "scripts": {
+        "start": "nodemon ./src/index.mjs"
+    },
+    "dependencies": {
+        "cookie-parser": "^1.4.7",
+        "express": "^5.1.0",
+        "express-session": "^1.18.2",
+        "express-validator": "^7.3.1",
+        "install": "^0.13.0",
+        "mongoose": "^9.0.0",
+        "nodemon": "^3.1.11",
+        "passport": "^0.7.0",
+        "passport-local": "^1.0.0"
+    },
+    "type": "module"
+}
