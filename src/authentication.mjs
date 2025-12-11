@@ -4,6 +4,9 @@ import passport from "passport";
 import userInfos from "./passport/mock.mjs";
 import "../src/passport/local-stratigy.mjs";
 import mongoose from "mongoose";
+import MangoStore from "connect-mongo";
+
+const app = express();
 app.use(express.json());
 
 app.use(
@@ -18,6 +21,11 @@ app.use(
     //check more about this val the cooke accept
     //httpOnly: true, sameSite: 'lax', ecure: false
     cookie: { maxAge: 60000 },
+    //this will save the seassion to our db and it will presist
+    store: MangoStore.create({
+      client: mongoose.connection.getClient(),
+     
+    })
   })
 );
 
